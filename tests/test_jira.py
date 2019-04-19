@@ -13,6 +13,7 @@ def setup():
     basedir = os.path.dirname(__file__)
     config.load(basedir + os.sep + 'etc', 'dev')
 
+@pytest.mark.skip(reason="you need a running jira server for this test")
 @pytest.mark.asyncio
 async def test_get(setup):
     response = await jira.get('PROBLEM-53531')
