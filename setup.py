@@ -19,6 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
+        "aiohttp",
         "haip-config",
         "haip-template"
     ]
